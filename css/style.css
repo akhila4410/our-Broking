@@ -73,7 +73,7 @@ img {
    color : yellow;
 }
 
-}
+
 
 .btn {
     padding: 14px 18px;
@@ -327,3 +327,56 @@ hr.solid {
     
 
 
+    
+
+.accordion-body {
+  padding: 0 18px;
+  height: auto;
+  overflow: hidden;
+  background-color: white;
+  font-size: 14px;
+  font-weight:lighter;
+}
+
+.wrapper  ol{
+  height: 120px;
+  overflow: hidden;
+  padding-left: 15px;
+}
+
+.wrapper  ol.active{
+height: auto;
+}
+
+.wrapper  ol li{
+margin-bottom: 5px;
+list-style: none;
+position: relative;
+}
+
+.wrapper  ol li:before{
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -12px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #bfbfbf;
+}
+
+.wrapper .toggle_btn{
+margin-top: 15px;
+font-weight: 700;
+color: #ffffff;
+cursor: pointer;
+font-size: 15px;
+padding: auto;
+margin-right: auto;
+border-radius: 5px;
+background: rgb(204, 12, 79);
+}
+
+.wrapper .toggle_btn.active .fas{
+transform: rotate(180deg);
+}
