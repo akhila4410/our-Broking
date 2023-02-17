@@ -381,7 +381,7 @@ transform: rotate(180deg);
 
 }
 .nav-tabs li  a{
-  border: medium none;
+  border: large none;
   padding: 10px;
 }
 .nav-tabs li  a:hover{
@@ -389,4 +389,37 @@ transform: rotate(180deg);
     border: medium none;
     border-radius: 0;
     color:#051c27 ;
+}
+
+.accordion-item a {
+  color: #007bff;
+}
+.accordion-item a:hover {
+  color: #0056b3;
+  
+}
+
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.fade {
+  transition: opacity .15s linear;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  outline: 0;
+}
+.head td {
+  font-size: 16px !important;
+  background: #284b8c !important;
+  text-align: center;
+  /* padding: 10px; */
 }
