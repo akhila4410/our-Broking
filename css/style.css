@@ -404,7 +404,7 @@ transform: rotate(180deg);
   overflow-y: auto;
 }
 .fade {
-  transition: opacity .15s linear;
+  transition: opacity .25s linear;
 }
 .modal {
   position: fixed;
@@ -422,4 +422,20 @@ transform: rotate(180deg);
   background: #284b8c !important;
   text-align: center;
   /* padding: 10px; */
+}
+.modal-backdrop {
+  z-index: -1;
+}
+.modal-header h5 {
+  font-size: 16px;
+  color: #5ecbd6;
+  text-align: center;
+  width: 100%;
+}
+.modal-title {
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+.list-div{
+  color: black;
 }
