@@ -11,6 +11,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> -->
 
   </head>
   <body>
@@ -48,15 +50,18 @@
 </nav> 
 <section  class="container mt-3" >
 <ul class="nav nav-tabs" id="myTab" role="tablist">
-  <li class="nav-item" role="presentation">
-    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><h4>Stock Brokers</h4></button>
+  <li class="nav-item" data-toggle="tooltip" title="Stock Brokers" data-placement="top" role="presentation">
+    <a class="nav-link active" id="stockbrokers-tab" data-bs-toggle="tab" href="#stockbrokers-tab-pane"   type="button" role="tab" aria-controls="stockbrokers-tab-pane" aria-selected="true"><h4>Stock Brokers</h4></a>
   </li>
-  <li class="nav-item" role="presentation">
-    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><h4>Depository participants</h4></button>
+  <li class="nav-item" data-toggle="tooltip" title="Depository Participants" data-placement="top" role="presentation">
+    <a class="nav-link " id="dp-tab" data-bs-toggle="tab" href="#dp-tab-pane" type="button" role="tab" aria-controls="dp-tab-pane" aria-selected="false"><h4>DP</h4></a>
+  </li>
+  <li class="nav-item" data-toggle="tooltip" title="Others" data-placement="top" role="presentation">
+    <a class="nav-link " id="others-tab" data-bs-toggle="tab" href="#others" type="button" role="tab" aria-controls="others-tab-pane" aria-selected="false"><h4>Other's</h4></a>
   </li>
 </ul>
 <div class="tab-content" id="myTabContent">
-  <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+  <div class="tab-pane fade show active" id="stockbrokers-tab-pane" role="tabpanel" aria-labelledby="stockbrokers-tab" tabindex="0">
 
 <div class="d-flex justify-content-center mb-3">
 <div >
@@ -674,7 +679,7 @@
 
 
 
-<div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+<div class="tab-pane fade" id="dp-tab-pane" role="tabpanel" aria-labelledby="dp-tab" tabindex="0">
   <div class="d-flex justify-content-center mb-3">
     <div >
     
@@ -964,9 +969,22 @@
 
 
 </div>
+
+<div class="tab-pane fade" id="others" role="tabpanel" aria-labelledby="others-tab" tabindex="0"> 
+  <ul class ="list-div" style ="padding: 15px;">
+    <li> Rights and Obligations of Beneficial Owner and Depository Participant as prescribed by SEBI and Depositories <br> <a href="https://www.sebi.gov.in/sebi_data/commondocs/may-2019/rightsandobligationsciranndec2013_p.pdf" style="cursor:pointer;color:blue;" target="_blank" >Click here</a>
+    </li>
+    <li> Rights and Obligations of Stock Brokers, Sub-Brokers and Clients as prescribed by SEBI and Stock Exchanges <br>  <a href="https://www.sebi.gov.in/sebi_data/commondocs/ann4rights_p.pdf" style="cursor:pointer;color:blue;" target="_blank" >Click here</a>
+    </li>
+    <li> Risk Disclosure Document For Capital Market And Derivatives Segments  <br> <a href="https://www.sebi.gov.in/sebi_data/commondocs/ann5risk_p.pdf" style="cursor:pointer;color:blue;" target="_blank" >Click here</a>
+    </li>
+    <li> Guidance note - Do's and Don'ts for trading on the exchange(s) for investors   <br><a href="https://www.sebi.gov.in/sebiweb/about/AboutAction.do?doQuickResoLink=yes&quickResoId=50" style="cursor:pointer;color:blue;" target="_blank" >Click here</a>
+    </li>
+
+  </ul>
+</div>
       </div>
-</div>
-</div>
+
 </section>
 
   <footer>  
@@ -976,10 +994,10 @@
     <div class="col-lg-3 col-md-6 footer-contact "  style="padding-top:5px">
     <p class="text-black" style="font-size:35px;font-weight:900;font-family:Anton;">
             <img  class = "logo " src ="img/logo.png" alt ="Logo"   style="width:60px;height:60px;">  Our Broking </p>
-    <p style="color: black;"> Address:.... <br> <strong style="color: black;">Phone:</strong> ########<br> <strong style="color: black;">Email:</strong> <a style="color: blue; text-decoration: underline;"> career@ourbroking.com</a><br></p>
+    <p style="color: black;"> Address:Firoze Gandhi Market<br>Ludhiana, Punjab 141001 <br> <strong style="color: black;">Phone:</strong> ########<br> <strong style="color: black;">Email:</strong> <a style="color: blue; text-decoration: underline;"> career@ourbroking.com</a><br><a style="color: blue; text-decoration: underline;padding-left: 50px;"> dp@ourbroking.com</a></p>
     </div>
     <div class="col-lg-3 col-md-6 footer-links" style="padding-top:20px">
-    <h5>About Company</h5>
+    <h5 style="color: black;">About Company</h5>
     <ul  class="list-unstyled">
     <li><a href="#" style="color: black;text-decoration: underline;" >Home</a></li>
     <li> <a href="#" style="color: black;text-decoration: underline;">About us</a></li>
@@ -988,7 +1006,7 @@
     </ul>
     </div>
     <div class="col-lg-3 col-md-6 footer-links" style="padding-top:20px">
-    <h5>More</h5>
+    <h5 style="color: black;">More</h5>
     <ul  class="list-unstyled">
     <li><i class="bx bx-chevron-right"></i><a href="#" style="color: black;text-decoration: underline;">FAQ's</a></li>
     <li><i class="bx bx-chevron-right"></i> <a href="#" style="color: black;text-decoration: underline;">Privacy policy</a></li>
@@ -998,7 +1016,7 @@
     </ul>
     </div>
     <div class="col-lg-3 col-md-6 footer-links" style="padding-top:20px;">
-    <h5>Useful Links</h5>
+    <h5 style="color: black;">Useful Links</h5>
     <ul  class="list-unstyled">
     <li><i class="bx bx-chevron-right"></i><a href="https://www.bseindia.com" style="color: black;text-decoration: underline;">BSE</a></li>
     <li><i class="bx bx-chevron-right"></i> <a href="https://www.nseindia.com" style="color: black;text-decoration: underline;">NSE</a></li>
@@ -1017,13 +1035,13 @@
 
     <div class=" text-center text-lg-start">
     <h6 style="color: red;">Disclaimer:</h6> 
-    <p style="font-size:10px;font-weight:600;color: black;">
+    <p style="font-size:10px;font-weight:normal;color: black;">
       Investment in securities market are subject to market risks, read all the related documents carefully before investing.
       OUR Broking Services LLP : Member of NSE  &  BSE – SEBI Registration no.: INZ000309758, Exchange Registration Nos : NSE Trading Member Code - 90314|NSE Clearing Member Code - M70057|BSE Clearing Number - 6801
-      Registered Address: OUR Broking Services LLP - Room 561, 5, LSE Building, Firoze Gandhi Market, Ludhiana - 141001, Punjab, India. For any complaints/grievances pertaining to securities broking, please write to care@ourbroking.com, for DP related to dp@ourbroking.com. Please ensure you carefully read the Risk Disclosure Document as prescribed by SEBI.</p>
+      Registered Address: OUR Broking Services LLP - Room 561, 5, LSE Building, Firoze Gandhi Market, Ludhiana - 141001, Punjab, India. For any complaints/grievances pertaining to securities broking, please write to care@ourbroking.com, for DP related queries write to dp@ourbroking.com. Please ensure you carefully read the Risk Disclosure Document as prescribed by SEBI.</p>
 
       <h6 style="color:red;">Attention Investors:</h6> 
-      <div style="color: black;font-weight: 600;font-size: 10px;" class="wrapper">
+      <div style="color: black;font-weight: normal;font-size: 10px;" class="wrapper">
         
           <ol class="">
             <li>Stock Brokers can accept securities as margin from clients only by way of pledge in the depository system w.e.f. September 1, 2020.</li>
@@ -1045,7 +1063,7 @@
                     ii. Speedy redressal of the grievances.</li>
           </ol>
           <span>
-            <button class="toggle_btn">
+            <button class="toggle_btn" style="background-color: grey;">
               <span class="toggle_text">Show More</span> 
               <span class="arrow">
               <i class="fas fa-angle-down" aria-hidden="true">
@@ -1399,6 +1417,40 @@
                                   </tbody>
                               </table>
                        </div>
+
+                  </div>
+              </div>
+          </div>
+
+      </div>
+  </div>
+</div>
+
+<div class="modal fade" id="Rights_of_investors" tabindex="-1" role="dialog" aria-labelledby="Rights_of_investorsTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="Arbitration_proceedingsTitle">Rights of investors</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+              </button>
+          </div>
+          <div class="modal-body">
+              <div class="poup-holder">
+                  <div class="row">
+                    <ul class="list-div">
+                      <li>Receive a copy of KYC, copy of account opening documents.</li>
+                      <li>No minimum balance is required to be maintained in a demat account.</li>
+                      <li>No charges are payable for opening of demat accounts.</li>
+                      <li>If executed, receive a copy of Power of Attorney. However, Power of Attorney is not a mandatory requirement as per SEBI / Stock Exchanges. You have the right to revoke any authorization given at any time.</li>
+                      <li>You can open more than one demat account in the same name with single DP/ multiple DPs.</li>
+                      <li>Receive statement of accounts periodically. In case of any discrepancies in statements, take up the same with the DP immediately. If the DP does not respond, take up the matter with the Depositories.</li>
+                      <li>Pledge and /or any other interest or encumbrance can be created on demat holdings.</li>
+                      <li>Right to give standing instructions with regard to the crediting of securities in demat account.</li>
+                      <li>Investor can exercise its right to freeze/defreeze his/her demat account or specific securities / specific quantity of securities in the account, maintained with the DP.</li>
+                      <li>In case of any grievances, Investor has right to approach Participant or Depository or SEBI for getting the same resolved within prescribed timelines.</li>
+                      <li>Every eligible investor shareholder has a right to cast its vote on various resolutions proposed by the companies for which Depositories have developed an internet based ‘e-Voting’ platform.</li>
+                      <li>Receive information about charges and fees. Any charges/tariff agreed upon shall not increase unless a notice in writing of not less than thirty days is given to the Investor.</li>
+                  </ul>
 
                   </div>
               </div>

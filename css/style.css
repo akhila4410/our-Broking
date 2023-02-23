@@ -17,16 +17,9 @@ body {
     background-color:white;
 }
 
-h1,h2,h3,h4,h5,h6,
-.display-4 {
-    color: var(--dark);
-    font-weight: 700;
-}
 
-a {
-    color: black;
-    text-decoration: none;
-}
+
+
 
 .container{
   padding:15px;
@@ -376,20 +369,38 @@ background: rgb(204, 12, 79);
 .wrapper .toggle_btn.active .fas{
 transform: rotate(180deg);
 }
-.nav-tabs{
-  background-color:white;
 
+
+.nav-tabs {
+  border-bottom-color:#284b8c ;
+  color:#284b8c 
 }
-.nav-tabs li  a{
-  border: large none;
-  padding: 10px;
+
+.nav-tabs .nav-item{
+  background-color: white;
+  color:#284b8c ;
+  border-bottom-color:#284b8c ;
+  font-weight: bold;
+ 
 }
-.nav-tabs li  a:hover{
-  background-color: #053146 !important;
-    border: medium none;
-    border-radius: 0;
-    color:#051c27 ;
+
+.nav-tabs .nav-link{
+  background-color: white;
+  color:#284b8c ;
+  border-bottom-color:#284b8c ;
+  font-weight: bold;
+  
 }
+
+
+
+.nav-tabs .nav-link.active {
+  background-color:#284b8c ;
+  color:white;
+  font-weight: bold;
+}
+
+
 
 .accordion-item a {
   color: #007bff;
