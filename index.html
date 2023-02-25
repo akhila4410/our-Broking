@@ -35,10 +35,10 @@
           <a class="nav-link " href="#home">Home</a>
         </li>
         <li class="nav-item px-3">
-          <a class="nav-link " href="#about">About Us</a>
+          <a class="nav-link " href="#about">Product & Services</a>
         </li>
         <li class="nav-item px-3">
-          <a class="nav-link" href="#services">Product & Services</a>
+          <a class="nav-link" href="#services">About Us</a>
         </li>
         <li class="nav-item px-3">
           <a class="nav-link" href="#Contact">Contact</a>
@@ -74,35 +74,48 @@
    
   <div class="row">
   
-  <div class=" col-md-6 col-lg-3 d-flex align-items-stretch">
-  <div class="member"> 
+  <div class=" col-md-6 col-lg-3 d-flex align-items-stretch" id="ET">
+  <div class="member" data-city="ET"> 
   <img src="img/stoc.jpg" alt="">
   <h4>Equity Trading </h4> 
-  <span>Stock Trading</span>
+  <a  href="#ET" onclick="myFunction('ET')" class="myBtn" style = "padding:5px">Know more</a>
+  <p style="color: rgba(19, 18, 18, 0.822);font-weight: normal;"><span class="dots"></span><span class="more" style="display: none;">The purchase and sale of a company's stock listed on exchanges such as the BSE/NSE is referred to as equity or stock trading .
+    Discipline and comprehensive review/detailed analysis can help you succeed in this market segment . 
+    This is accomplished by opening a trading account with a SEBI-registered stock broker .</span> </p>
+    
   </div>
   </div>
   
-  <div class="  col-md-6 col-lg-3 d-flex align-items-stretch">
-  <div class="member"> 
+  <div class="  col-md-6 col-lg-3 d-flex align-items-stretch" id="DT">
+  <div class="member" data-city="DT"> 
   <img src="img/derivative.png" alt="">
   <h4>Derivatives Trading</h4> 
-  <span>Future and Options</span>
+  <a  href="#DT" onclick="myFunction('DT')" class="myBtn" style = "padding:5px">Know more</a>
+  <p style="color: rgba(19, 18, 18, 0.822);font-weight: normal;"><span class="dots"></span><span class="more" style="display: none;">Trading in financial products like futures and options that derive their value from the underlying asset is referred to as " derivative trading. "
+     Given that it is a margin-based product and provides tremendous space for the development of speculation and hedging , 
+     it is one of the most fascinating forms of trading.</span></p>
+
   </div>
   </div>
   
-  <div class=" col-md-6 col-lg-3 d-flex align-items-stretch">
-  <div class="member"> 
+  <div class=" col-md-6 col-lg-3 d-flex align-items-stretch" id="CD">
+  <div class="member" data-city="CD"> 
   <img src="img/currency.png" alt="">
   <h4>Currency Derivatives</h4> 
-  <span>FX future</span>
+  <a  href="#CD" onclick="myFunction('CD')" class="myBtn" style = "padding:5px">Know more</a>
+  <p style="color: rgba(19, 18, 18, 0.822);font-weight: normal;"><span class="dots"></span><span class="more" style="display: none;" >One of the biggest investment marketplaces in the world, the currency market, or Forex(FX), uses the buying and selling of currencies as its primary trading method. While trading currencies, a trader may exchange one currency for another to make a profit or for security. 
+    Considering the high volatility of the forex market, hedging is crucial to protect the investor's position from an unfavorable change in exchange rates.</span></p>
   </div>
   </div>
   
-  <div class=" col-md-6 col-lg-3 d-flex align-items-stretch">
-  <div class="member"> 
+  <div class=" col-md-6 col-lg-3 d-flex align-items-stretch" id="DS">
+  <div class="member" data-city="DS"> 
   <img src="img/depository.png" alt="">
   <h4>Depository Services</h4> 
-  <span> Holding financial securities</span>
+  <a  href="#DS" onclick="myFunction('DS')" class="myBtn" style = "padding:5px">Know more</a>
+  <p style="color: rgba(19, 18, 18, 0.822);font-weight: normal;"><span class="dots"></span><span class="more" style="display: none;">Depository services aid in the electronic storage of all securities such as stocks, bonds, mutual funds, ETFs, or other financial instruments 
+    that hold value and can be traded between parties. The investor must open an account with the depository through a depository participant in order to 
+    use these services. Holding shares in the account is akin to holding money in the bank.</span></p>
   </div>
   </div>
    
@@ -138,7 +151,7 @@
 
 <section id="Contact">
 <div class="container text-center">
-<h1 class="text-black" style="font-size:30px;font-weight:900;padding-top: 100px;"> Find us on Social Media</h1>
+<h1 class="text-black" style="font-weight:900;padding-top: 100px;"> Find us on Social Media</h1>
 <div class= "social-icons">
     <a href="#"><img src="img/mail.png"></a>
     <a href="#"><img src="img/linkedin.png"></a>
@@ -161,10 +174,10 @@
     <div class="col-lg-3 col-md-6 footer-links" style="padding-top:20px">
     <h5>About Company</h5>
     <ul  class="list-unstyled">
-    <li><a href="#" style="color: black;text-decoration: underline;" >Home</a></li>
-    <li> <a href="#" style="color: black;text-decoration: underline;">About us</a></li>
-      <li><a href="#" style="color: black;text-decoration: underline;">Services</a></li>
-    <li> <a href="#" style="color: black;text-decoration: underline;">Contact</a></li>
+    <li><a href="index.html" style="color: black;text-decoration: underline;" >Home</a></li>
+    <li> <a href="index.html#about" style="color: black;text-decoration: underline;">About us</a></li>
+      <li><a href="index.html#services" style="color: black;text-decoration: underline;">Services</a></li>
+    <li> <a href="index.html#Contact" style="color: black;text-decoration: underline;">Contact</a></li>
     </ul>
     </div>
     <div class="col-lg-3 col-md-6 footer-links" style="padding-top:20px">
@@ -258,6 +271,21 @@ $(".toggle_btn").click(function(){
     }
   });
   
+  function myFunction(city) {
+    let dots = document.querySelector(`.member[data-city="${city}"] .dots`);
+    let moreText = document.querySelector(`.member[data-city="${city}"] .more`); 
+    let btnText = document.querySelector(`.member[data-city="${city}"] .myBtn`);
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Know more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Know less"; 
+    moreText.style.display = "inline";
+  }
+}
 
 </script>
 </body>

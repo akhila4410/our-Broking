@@ -27,7 +27,7 @@ body {
 
 
 section {
-  padding:60px  0 ;
+  padding:50px  0 ;
   overflow: hidden;
 }
 
@@ -283,7 +283,7 @@ text-align : center;
 .social-icons img
 {
  padding:8px;
- width:60px;
+ width:70px;
  transition:0.5s;
  }
  
@@ -372,24 +372,19 @@ transform: rotate(180deg);
 
 
 .nav-tabs {
-  border-bottom-color:#284b8c ;
   color:#284b8c 
 }
 
 .nav-tabs .nav-item{
   background-color: white;
   color:#284b8c ;
-  border-bottom-color:#284b8c ;
   font-weight: bold;
- 
 }
 
 .nav-tabs .nav-link{
   background-color: white;
   color:#284b8c ;
-  border-bottom-color:#284b8c ;
-  font-weight: bold;
-  
+  font-weight: bold; 
 }
 
 
@@ -450,3 +445,4 @@ transform: rotate(180deg);
 .list-div{
   color: black;
 }
+
