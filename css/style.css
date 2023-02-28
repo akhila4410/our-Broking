@@ -286,6 +286,19 @@ text-align : center;
  width:70px;
  transition:0.5s;
  }
+
+ @media (max-width: 768px){
+  .social-icons img
+{
+ padding:8px;
+ width:50px;
+ transition:0.5s;
+ }
+
+
+ }
+
+
  
 .social-icons a:hover img
 {
