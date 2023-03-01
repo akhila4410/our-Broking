@@ -135,6 +135,10 @@ img {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
+#hero .hero-img img {
+  width: 90%;
+}
+
 @media (max-width: 991px) {
   #hero {
     height: 80vh;
